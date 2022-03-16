@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Aplicacion del Tiempo</title>
+</head>
+<body>
+ 
+    <header>
+        <h1>El Tiempo para Hoy</h1>
+        <form class="contenedor" id="form">
+            <div class="contenedor__pais">
+                <label>País:</label>
+                <select class="redondo" id="pais">
+                    <option disabled selected value=""> Seleccione </option>
+                    <option value="AR">Argentina</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="CU">Cuba</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="CA">Canadá</option>
+                </select>
+            </div>
+            <div class="contenedor__ciudad">
+                <label>Ciudad:</label>
+                <input type="text" placeholder="Escribe una ciudad" class="redondo" id="ciudad"/>
+            </div>
+
+            <button type="submit">Buscar</button>
+            
+        </form>
+        <div class="opciones">
+            <a href="#" id="tempMin">Temperatura Mínima</a>
+            <a href="#" id="tempMax">Temperatura Máxima</a>
+            <a href="#" id="humedad">Humedad</a>
+        </div>
+        
+
+    </header>
+    <main id="principal">
+        
+    </main>
+
+
+
+  <script src="./scripts/script.js"></script>  
+</body>
+</html>

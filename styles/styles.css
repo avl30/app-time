@@ -1,0 +1,151 @@
+:root{
+    --primerColor: rgb(4, 45, 110);
+    --segundoColor:rgba(100, 198, 236, 0.911);
+    --tercerColor:rgb(241, 42, 42); 
+    --fuentePrincipal:'Lobster', cursive;
+    --segundaFuente:'Abril Fatface', cursive; 
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h1{
+    font-family: var(--segundaFuente); 
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0;
+    color: var(--segundoColor);
+    
+}
+
+p{
+    margin: 0;
+}
+
+
+header{
+    background: var(--primerColor);
+}
+
+
+main{
+    height: 29.5em;
+    background-image: url(../images/soleado/cloud-g1e35cb842_1920.jpg);
+    background-position:left;
+}
+
+.contenedor{
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+} 
+
+@media(min-width:780px) {
+    form{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+label{
+    
+    color: var(--segundoColor);
+    margin-right: 0.5em;
+    font-family: var(--fuentePrincipal);
+}
+select{
+    width: 100%;
+    margin-bottom: 0.5em;
+    
+}
+input{
+    width: 100%;
+    margin-bottom: 0.8em;
+    
+}
+
+option{
+    color:var(--primerColor);
+}
+.redondo{
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    
+}
+
+.opciones{
+    padding-bottom: 0.5em;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+@media(min-width:780px){
+    .opciones{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.opciones a{
+    font-family: var(--fuentePrincipal);
+    color: var(--segundoColor);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+button{
+    border-radius: 0.5em;
+    color: var(--primerColor);
+    background: var(--segundoColor);
+    border: none;
+    
+}
+
+.mensaje{
+    font-family: var(--segundaFuente);
+    padding-bottom: 1em;
+    color: var(--tercerColor);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.principal{
+    max-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primerColor);
+    font-size: 2em;
+    padding: 5em 0 0;
+    font-weight: bold;
+    text-shadow: 0.2em 0.1em 0.6em rgb(221 214 214);
+}
+.temperatura{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+    text-shadow: 0.02em 0.01em  black;
+}
+
+.localizacion{
+    width: 0.6em;
+    margin-left: 0.3em;
+    
+
+}
